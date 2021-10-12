@@ -27,7 +27,7 @@ public class MyappServer extends WebMvcConfigurerAdapter
     @Override
     public void addInterceptors(InterceptorRegistry registry)
     {
-        registry.addInterceptor(new LoggingInterceptor()).addPathPatterns("/**");
+         registry.addInterceptor(new LoggingInterceptor()).addPathPatterns("/**");
     }
 
 
