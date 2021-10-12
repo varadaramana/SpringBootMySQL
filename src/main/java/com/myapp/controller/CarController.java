@@ -35,7 +35,8 @@ public class CarController {
 
     @GetMapping("/{licensePlate}")
     public CarDTO getCar(@Valid @PathVariable String licensePlate) throws EntityNotFoundException {
-        return CarMapper.makeCarDTO(carService.find(licensePlate));
+        System.out.println("logger added getcar");
+    	return CarMapper.makeCarDTO(carService.find(licensePlate));
     }
 
     @PostMapping
