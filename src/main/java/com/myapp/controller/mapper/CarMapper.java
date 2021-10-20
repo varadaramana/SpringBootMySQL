@@ -25,7 +25,8 @@ public class CarMapper {
         }
         return carDTOBuilder.build();
     }
-
+//private
+    //public
     public static CarDO makeCarDO(CarDTO carDTO) {
         return new CarDO(carDTO.getLicensePlate(), carDTO.getSeatCount(), carDTO.isConvertible(), carDTO.getRating(), carDTO.getEngineType(), carDTO.getManufacturer());
     }
