@@ -16,9 +16,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.lang.NonNull;
 
 @Entity
 @Table(
@@ -36,11 +36,11 @@ public class DriverDO {
     private ZonedDateTime dateCreated = ZonedDateTime.now();
 
     @Column(nullable = false)
-    @NotNull(message = "Username can not be null!")
+    @NonNull
     private String username;
 
     @Column(nullable = false)
-    @NotNull(message = "Password can not be null!")
+    @NonNull
     private String password;
 
     @Column(nullable = false)
