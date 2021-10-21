@@ -16,6 +16,6 @@ public class BankDTO {
 	private String Branch;
 	private String Address;
 	private String Pincode;
-	
+	private String IFSCcode;
 
 }

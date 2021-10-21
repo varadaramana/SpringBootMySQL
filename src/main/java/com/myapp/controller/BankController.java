@@ -5,16 +5,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.myapp.datatransferobject.BankDTO;
-
 @RestController
 @RequestMapping("v1/Bank")
 public class BankController {
 	
 	@GetMapping("/Bankid")
 	public BankDTO getBank() {
-		return new BankDTO("12345","sbi","agnampudi","vzg","512154");
+		return new BankDTO("12345","sbi","agnampudi","vzg","512154","sbin0006832");
 		
 	}
+	
+	@GetMapping("/Bankid1")
+	public BankDTO getBank1() {
+		return new BankDTO("12345","sbi","agnampudi","vzg","512154","sbin0006832");
+		
+	}
+	
 	@GetMapping("/Bankid/Noargs")
 	public BankDTO getBankNoargs() {
 		BankDTO bnk = BankDTO.builder().Bankid("23456").Bankname("kotak").Branch("vijayawada")
@@ -25,11 +31,13 @@ public class BankController {
 	@GetMapping("/Bankid/kiran")
 	public BankDTO getbankSetters() {
 		BankDTO bnk = new BankDTO();
+		
 		bnk.setBankid("23456");
 		bnk.setBankname("kotak");
 		bnk.setBranch("vijayawada");
 		bnk.setAddress("Vijayawada");
 		bnk.setPincode("5236854");
+		bnk.setIFSCcode("sbin0006832");
 		return bnk;
 	}
 }
