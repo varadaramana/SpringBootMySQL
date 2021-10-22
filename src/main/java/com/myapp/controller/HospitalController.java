@@ -1,4 +1,4 @@
-package com.myapp.controller;
+	package com.myapp.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,8 +11,8 @@ import com.myapp.datatransferobject.HospitalDTO;
 
 public class HospitalController {
 	
-	@GetMapping("/hospitalId")
-	public HospitalDTO gethospital() {
+	@GetMapping("/hospitalId/args")
+	public HospitalDTO gethospitalargs() {
 		return new HospitalDTO("123" , "KGH","vizag","1234567891");
 				
 	}
@@ -24,7 +24,7 @@ public HospitalDTO gethospitalnoargs() {
 }
 
 @GetMapping("/hospitalId/setter")
-public HospitalDTO gethospitalArgs() {
+public HospitalDTO gethospital() {
 	HospitalDTO hs = new HospitalDTO();
 	
 	hs.setHospitalId("8552");
