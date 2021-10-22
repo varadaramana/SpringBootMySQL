@@ -8,6 +8,8 @@ import com.myapp.domainvalue.OnlineStatus;
 import com.myapp.exception.ConstraintsViolationException;
 import com.myapp.exception.EntityNotFoundException;
 import java.util.List;
+import java.util.Optional;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
@@ -132,12 +134,12 @@ public class DefaultDriverService implements DriverService
 
     private DriverDO findDriverChecked(Long driverId) throws EntityNotFoundException
     {
-        DriverDO driverDO = driverRepository.findOne(driverId);
+        Optional<DriverDO> driverDO = driverRepository.findById(driverId);
         if (driverDO == null)
         {
             throw new EntityNotFoundException("Could not find entity with id: " + driverId);
         }
-        return driverDO;
+        return driverDO.get();
     }
 
 }
