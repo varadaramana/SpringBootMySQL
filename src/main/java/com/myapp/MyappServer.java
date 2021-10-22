@@ -29,10 +29,7 @@ public class MyappServer extends WebMvcConfigurerAdapter
     {
          registry.addInterceptor(new LoggingInterceptor()).addPathPatterns("/**");
     }
-private void sout() {
-	// TODO Auto-generated method stub
 
-}
 
     @Bean
     public Docket docket()
