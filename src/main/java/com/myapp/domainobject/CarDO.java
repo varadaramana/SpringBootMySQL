@@ -2,6 +2,7 @@ package com.myapp.domainobject;
 
 import com.myapp.domainvalue.EngineType;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.lang.NonNull;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +14,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-import javax.validation.constraints.NotNull;
 import java.time.ZonedDateTime;
 
 @Entity
@@ -33,11 +33,11 @@ public class CarDO {
     private ZonedDateTime dateCreated = ZonedDateTime.now();
 
     @Column(nullable = false)
-    @NotNull(message = "License plate can not be null!")
+    @NonNull
     private String licensePlate;
 
     @Column(nullable = false)
-    @NotNull(message = "Seat count can not be null!")
+    @NonNull
     private int seatCount;
 
     @Column(nullable = false)
