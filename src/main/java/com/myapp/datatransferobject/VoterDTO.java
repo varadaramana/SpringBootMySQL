@@ -9,13 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CollegeDTO {
+public class VoterDTO {
 	
-	private String collegeId;
-	private String collegeName;
-	private String collegeLoc;
-	private String collegeDistrict;
-	private String collegePh;
-	 
-	
+	private String voterId;
+	private String voterName;
+	private String voterAddress;
+	private String voterPh;
+
 }

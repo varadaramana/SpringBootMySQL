@@ -9,13 +9,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CollegeDTO {
+public class AdharDTO {
+	private String adharId;
+	private String adharName;
+	private String adharDob;
+	private String adharAddress;
+	private String adharPh;
 	
-	private String collegeId;
-	private String collegeName;
-	private String collegeLoc;
-	private String collegeDistrict;
-	private String collegePh;
-	 
-	
+
 }

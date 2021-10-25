@@ -5,17 +5,13 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.myapp.domainvalue.GeoCoordinate;
 
-import javax.validation.constraints.NotNull;
-
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class DriverDTO {
     @JsonIgnore
     private Long id;
 
-    @NotNull(message = "Username can not be null!")
     private String username;
 
-    @NotNull(message = "Password can not be null!")
     private String password;
 
     private GeoCoordinate coordinate;
