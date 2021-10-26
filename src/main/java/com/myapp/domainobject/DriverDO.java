@@ -1,9 +1,7 @@
 package com.myapp.domainobject;
 
-import com.myapp.domainvalue.GeoCoordinate;
-import com.myapp.domainvalue.OnlineStatus;
-
 import java.time.ZonedDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -16,9 +14,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
+
+import com.myapp.domainvalue.GeoCoordinate;
+import com.myapp.domainvalue.OnlineStatus;
 
 @Entity
 @Table(
@@ -36,11 +36,9 @@ public class DriverDO {
     private ZonedDateTime dateCreated = ZonedDateTime.now();
 
     @Column(nullable = false)
-    @NotNull(message = "Username can not be null!")
     private String username;
 
     @Column(nullable = false)
-    @NotNull(message = "Password can not be null!")
     private String password;
 
     @Column(nullable = false)
