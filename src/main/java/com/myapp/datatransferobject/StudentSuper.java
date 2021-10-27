@@ -1,21 +1,18 @@
 package com.myapp.datatransferobject;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class BankDTO {
+
+public class StudentSuper {
+	private List<StudentDTO> studentParent ;
 	
-	private String Bankid;
-	private String Bankname;
-	private String Branch;
-	private String Address;
-	private String Pincode;
-	private String IFSCcode;
 
 }
