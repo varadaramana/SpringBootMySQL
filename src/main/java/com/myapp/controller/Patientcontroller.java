@@ -10,7 +10,7 @@ import com.myapp.datatransferobject.PatientDTO;
 @RequestMapping("P1/patient")
 public class Patientcontroller {
 
-	@GetMapping("/patid/Allargs")
+	@GetMapping(" ")
 	public PatientDTO getPatientallargs() {
 		return new PatientDTO("230","ravi","attada","9133010525","mattagani@gmail.com") ;
 	}
