@@ -10,14 +10,19 @@ import com.myapp.datatransferobject.PatientDTO;
 @RequestMapping("P1/patient")
 public class Patientcontroller {
 
-	@GetMapping(" ")
+	@GetMapping("/patid/Allargs")
 	public PatientDTO getPatientallargs() {
 		return new PatientDTO("230","ravi","attada","9133010525","mattagani@gmail.com") ;
 	}
 	@GetMapping("/patient/Noargs")
 	public PatientDTO getPatientnoargs() {
-		 PatientDTO pdto = PatientDTO.builder().patientId("230").patientName("ravi").patientPlace("attada").
-				 patientPhone("9133010525").patientGmail("mattagani@gmail.com").build();
+		 PatientDTO pdto = PatientDTO.builder()
+				 .patientId("230")
+				 .patientName("ravi")
+				 .patientPlace("attada")
+				 .patientPhone("9133010525")
+				 .patientGmail("mattagani@gmail.com")
+				 .build();
 	
 		return pdto;
 	}
