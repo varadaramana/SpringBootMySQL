@@ -10,6 +10,7 @@ import com.myapp.datatransferobject.MaruthiCarsDTO;
 
 @RestController
 @RequestMapping("/c1/car")
+ 
 public class MaruthiCarsController {
 
 	@GetMapping("/cardata")

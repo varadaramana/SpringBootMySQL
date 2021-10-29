@@ -43,4 +43,7 @@ values
 
 insert into car (car_id,license_plate, seat_count, convertible, rating, engine_type, manufacturer, date_created, deleted)
 values
- (1,'4545PWR', 4, false, 9, 'GAS', 'MERCEDES', now(), false)
+ (1,'4545PWR', 4, false, 9, 'GAS', 'MERCEDES', now(), false);
+
+ 
+ 
