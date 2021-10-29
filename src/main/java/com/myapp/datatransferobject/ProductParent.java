@@ -10,7 +10,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class PatientParent {
-	private List<PatientDTO> patientParent;
+public class ProductParent {
+	
+	private List<ProductDTO> productParent;
+	
 
-} 
+}
