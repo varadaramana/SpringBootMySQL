@@ -1,7 +1,5 @@
 package com.myapp.datatransferobject;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +8,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class PatientParent {
-	private List<PatientDTO> patientParent;
+public class EmpDTO {
 	
-} 
+	private String empId;
+	private String empName;
+	
+	private DepDTO depDto;
+	
+
+}
