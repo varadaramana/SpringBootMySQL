@@ -7,9 +7,11 @@ public class TryCatch {
 		int j = 0;
 		int data;
 		try {
-			data = i / j;
-		} catch(ArithmeticException e)    {
+			 data = i / j;
+		} catch (ArithmeticException e) {
 			System.out.println(i / (j + 2));
+		} finally {
+			System.out.println("it's allready existed");
 		}
 	}
 

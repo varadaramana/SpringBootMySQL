@@ -9,7 +9,8 @@ public class Capacity {
 		System.out.println(sb.capacity());
 		sb.append("Maths is my favourite subject");  
 		System.out.println(sb.capacity());
-
+		sb.append("mpagks");
+		System.out.println(sb.capacity());
 	}
 
 }
