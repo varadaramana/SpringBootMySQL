@@ -14,13 +14,6 @@ public class PracticepurposeALL {
 		System.out.println(S1.compareTo(S2));
 		
 		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
